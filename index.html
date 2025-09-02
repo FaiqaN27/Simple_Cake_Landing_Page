@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CakeCraft</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white logo_name">CakeCraft</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon bg-light ham_icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto nav_list">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#bg">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BgImage -->
+    <div class="bg_Image" id="bg"></div>
+
+    <!-- About -->
+    <div class="container abt_container">
+      <h2 class="abt_heading"><a id="about">About Us</a></h2>
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-lg-0">
+          <img src="./Images/pic5.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 text-md-left">
+          <p class="abt_para">
+            At CakeCraft, we're passionate about baking and dedicated to making
+            your special moments even sweeter. Our journey began with a simple
+            love for baking, and soon grew into a business that's all about
+            quality, personalized service, and building a community of happy
+            customers. Our team, led by founder and head baker Faiqa Nadeem, is
+            committed to creating delicious and visually stunning cakes that
+            exceed your expectations.With years of experience and a focus on
+            quality, we're honored to be a part of your celebrations, whether
+            it's a birthday, wedding, graduation, or just a Tuesday. At
+            CakeCraft, we're baking memories, one cake at a time, and we can't
+            wait to be a part of your next celebration! We're constantly
+            innovating and improving our recipes to ensure every bite is a
+            delight. Our bakery is a warm and welcoming space, filled with the
+            sweet scent of freshly baked goods. Let us help make your next
+            occasion even more unforgettable!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="container my-4">
+      <h2 class="product_heading"><a id="products">Products</a></h2>
+      <div
+        class="row row-cols-1 row-cols-md-3 g-3 py-2"
+        id="product-container"
+      ></div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact_bg">
+      <div class="container">
+        <h2 class="con_heading"><a id="contact">Contact Us</a></h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <form action="" method="" class="row">
+              <div class="col-lg-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  name="FirstName"
+                  placeholder="First Name"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  name="LastName"
+                  placeholder="Last Name"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="col-lg-6 mb-3">
+                <input
+                  type="email"
+                  class="form-control mb-2"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-lg-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  name="phoneNo"
+                  placeholder="Phone No"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="col-12 mb-3">
+                <div class="form-group">
+                  <textarea
+                    name="Message"
+                    placeholder="Write your Message"
+                    class="form-control border-0 shadow-none Msg_area"
+                    rows="7"
+                    cols="20"
+                    required
+                    autocomplete="off"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-12 py-3 text-right">
+                <button
+                  type="submit"
+                  class="form-btn"
+                  onclick="submitData(event)"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container">
+      <h2 class="gall_heading"><a id="gallery"></a>Gallery</h2>
+      <div class="row">
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic10.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic2.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic3.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic4.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic5.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic6.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic7.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic8.jpg" alt="" />
+        </div>
+        <div class="col-md-4 py-2">
+          <img class="gall_img img-fluid" src="./Images/pic9.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer_container">
+      <footer
+        class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-5"
+      >
+        <span class="footer_text"
+          >© 2024, Designed & Developed By CakeCraft</span
+        >
+      </footer>
+    </div>
+
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
